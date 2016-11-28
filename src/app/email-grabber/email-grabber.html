@@ -1,0 +1,31 @@
+<div ng-class="emailGrabberCtrl.focus ? 'parent focused' : 'parent'">
+  <video class="petbotVideo" preload="auto" loop="true" autoplay>
+      <source src="assets/petbot-small.mp4" type="video/mp4">
+      <!-- <source src="http://3yq63w3tvb6c1innxc1hzsya.wpengine.netdna-cdn.com/wp-content/uploads/2015/06/saastr_event_bg_2016.ogv" type="application/ogg"> -->
+      <!-- <source src="http://3yq63w3tvb6c1innxc1hzsya.wpengine.netdna-cdn.com/wp-content/uploads/2015/06/saastr_event_bg_2016.webm" type="application/webm"> -->
+      <!-- <img src="https://www.saastr.com/wp-content/uploads/2015/04/annual_2016_bg.jpg"> -->
+  </video>
+
+  <div class="emailGrabber">
+    <h1>Be the first to know when PetBot becomes available</h1>
+
+<form action="//petbot.us11.list-manage.com/subscribe/post?u=3a44fb42a6040c3970574d05e&amp;id=844e8c5a3b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+  <div class="flex col flex-center email-block">
+    <input
+      class="input-email-grabber"
+      type="email"
+      value=""
+      name="EMAIL"
+      id="mce-EMAIL"
+      placeholder="{{emailGrabberCtrl.placeholder}}"
+      ng-focus="emailGrabberCtrl.focus = true; emailGrabberCtrl.placeholder = '';"
+      ng-blur="emailGrabberCtrl.focus = false; emailGrabberCtrl.placeholder = 'email'"/>
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3a44fb42a6040c3970574d05e_844e8c5a3b" tabindex="-1" value=""></div>
+    <div class="subscribe-cta">
+      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="caps subscribe-cta cta white center">
+    </div>
+  </div>
+</form>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+</div>
+<div>

@@ -1,0 +1,61 @@
+.petbotVideo {
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  opacity: .8;
+}
+
+
+.emailGrabber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.input-email-grabber {
+  padding: 0.85em 1.5em;
+  border-radius: 2em;
+  background: white;
+  color: $brand;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.parent {
+  transition: background-color .3s ease;
+  background-color: rgba($brand, 0);
+}
+
+.parent.focused {
+  background-color: rgba($brand, .3);
+  .subscribe-cta {
+    background-color: rgba($brand, .5);
+    color: white;
+    &:hover {
+      background-color: rgba($brand, 1);
+      cursor: pointer;
+    }
+  }
+}
+
+.subscribe-cta {
+  transition: all .3s ease;
+  height: 40px;
+  width: 200px;
+  background-color: $brand-light;
+  color: grey;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0 auto;
+}
+
+.email-block {
+  width: 400px;
+}

@@ -9,6 +9,8 @@ import {header} from './app/header';
 import {title} from './app/title';
 import {footer} from './app/footer';
 
+import {emailGrabber} from './app/email-grabber/email-grabber';
+
 import './index.scss';
 
 angular
@@ -17,4 +19,5 @@ angular
   .component('app', main)
   .component('fountainHeader', header)
   .component('fountainTitle', title)
-  .component('fountainFooter', footer);
+  .component('fountainFooter', footer)
+  .component('emailGrabber', emailGrabber);

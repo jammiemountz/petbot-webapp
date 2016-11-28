@@ -5,7 +5,7 @@ module.exports = function () {
     server: {
       baseDir: [
         conf.paths.dist
-      ]
+      ],
     },
     open: false
   };
