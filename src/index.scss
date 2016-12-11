@@ -8,7 +8,7 @@ html, body, #root {
   height: 100%;
   font-family: 'PT Sans', sans-serif;
   color: $brand-dark;
-  background-color: $brand-light;
+  // background-color: $brand-light;
 }
 
 body, h1, h2, h3 {
@@ -19,6 +19,7 @@ body, h1, h2, h3 {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  overflow:hidden;
 }
 .main {
   flex: 1;
@@ -32,3 +33,5 @@ body, h1, h2, h3 {
 @import "./app/header/header";
 @import "./app/progressbar/progressbar";
 @import "./app/main-info/main-info";
+@import "./app/main-info/main-info";
+@import "./app/socialMedia/socialMedia";

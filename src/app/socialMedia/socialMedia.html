@@ -1,0 +1,5 @@
+<div class="social-media-container">
+  <a ng-repeat="media in socialMediaCtrl.socialmedias" ng-href="{{media.url}}">
+    <div ng-class="['social-media', media.name]" ng-include src="media.include"></div>
+  </a>
+</div>

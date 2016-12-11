@@ -10,6 +10,7 @@ import {footer} from './app/footer/footer';
 import {progressBar} from './app/progressBar/progressBar';
 import {prizes} from './app/prizes/prizes';
 import {mainInfo} from './app/main-info/main-info';
+import {socialMedia} from './app/socialMedia/socialMedia.js';
 
 import {crowdfunding} from './app/crowdfunding/crowdfunding';
 import {emailGrabber} from './app/email-grabber/email-grabber';
@@ -26,4 +27,5 @@ angular
   .component('emailGrabber', emailGrabber)
   .component('prizes', prizes)
   .component('mainInfo', mainInfo)
+  .component('socialMedia', socialMedia)
   .component('crowdfunding', crowdfunding);
