@@ -148,3 +148,11 @@
   height: 117px;
   justify-content: space-between;
 }
+
+.content-holder-icon:hover .content-icon-stroke {
+  stroke: $brand-accent;
+}
+
+.content-icon-stroke {
+  stroke: white;
+}

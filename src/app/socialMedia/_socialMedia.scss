@@ -8,14 +8,14 @@
 .social-media:hover .accent-fill {
   fill: white;
 }
+.social-media:hover .white-fill {
+  fill: $brand;
+}
 .accent-fill {
   fill: $brand;
 }
 .white-fill {
   fill: white;
-}
-.social-media:hover .white-fill {
-  fill: $brand;
 }
 
 .social-media-container {
