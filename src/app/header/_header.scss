@@ -1,0 +1,24 @@
+.header {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 10px;
+  line-height: 40px;
+}
+
+.cta {
+  background-color: $brand-accent;
+  border: none;
+  width: 100px;
+  height: 45px;
+  margin: 10px;
+  text-transform: uppercase;
+
+}
