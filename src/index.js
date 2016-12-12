@@ -10,6 +10,8 @@ import {footer} from './app/footer/footer';
 import {progressBar} from './app/progressBar/progressBar';
 import {prizes} from './app/prizes/prizes';
 import {mainInfo} from './app/main-info/main-info';
+import {press} from './app/press/press';
+import {setup} from './app/setup/setup';
 import {socialMedia} from './app/socialMedia/socialMedia.js';
 
 import {crowdfunding} from './app/crowdfunding/crowdfunding';
@@ -28,4 +30,6 @@ angular
   .component('prizes', prizes)
   .component('mainInfo', mainInfo)
   .component('socialMedia', socialMedia)
+  .component('press', press)
+  .component('setup', setup)
   .component('crowdfunding', crowdfunding);

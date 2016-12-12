@@ -13,5 +13,13 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('crowdfunding', {
       url: '/crowdfunding',
       component: 'crowdfunding'
+    })
+    .state('press', {
+      url: '/press',
+      component: 'press'
+    })
+    .state('setup', {
+      url: '/setup',
+      component: 'setup'
     });
 }
