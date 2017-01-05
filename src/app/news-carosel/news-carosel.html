@@ -1,5 +1,5 @@
 <div class="newscarosel">
-  <a ng-repeat="article in newsCaroselCtrl.newsMentions" href="article.link">
+  <a target='_blank' ng-repeat="article in newsCaroselCtrl.newsMentions" href="{{article.link}}">
     <div class="news-article">
       <img class="news-article-logo" ng-src="{{article.image}}" />
       <p class="news-article-title">{{article.title}}</p>
