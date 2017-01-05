@@ -13,6 +13,7 @@ import {mainInfo} from './app/main-info/main-info';
 import {press} from './app/press/press';
 import {setup} from './app/setup/setup';
 import {socialMedia} from './app/socialMedia/socialMedia.js';
+import {newsCarosel} from './app/news-carosel/news-carosel.js';
 
 import {crowdfunding} from './app/crowdfunding/crowdfunding';
 import {emailGrabber} from './app/email-grabber/email-grabber';
@@ -32,4 +33,5 @@ angular
   .component('socialMedia', socialMedia)
   .component('press', press)
   .component('setup', setup)
+  .component('newsCarosel', newsCarosel)
   .component('crowdfunding', crowdfunding);

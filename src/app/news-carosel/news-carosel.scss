@@ -1,0 +1,30 @@
+a {
+  text-decoration: none;
+}
+
+.news-article {
+  width: 200px;
+  opacity: 0.8;
+  transition: .3s ease all;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.newscarosel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-article-logo {
+  width: 200px;
+}
+
+.news-article-title {
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
