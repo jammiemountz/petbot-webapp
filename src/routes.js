@@ -20,6 +20,10 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       url: '/press',
       component: 'press'
     })
+    .state('help', {
+      url: '/help',
+      redirectTo: 'setup'
+    })
     .state('setup', {
       url: '/setup',
       component: 'setup'
