@@ -1,0 +1,26 @@
+.features {
+  display: flex;
+  padding: 70px;
+}
+
+.content-icon-stroke {
+  stroke: red;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}
+
+.feature-image {
+  height: 120px;
+  width: 120px;
+  border: 1px solid black;
+}
+
+.feature-text {
+  max-width: 100px;
+  text-align: center;
+}

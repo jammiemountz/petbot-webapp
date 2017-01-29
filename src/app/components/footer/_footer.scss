@@ -1,0 +1,15 @@
+.footer {
+  padding: 40px;
+  background-color: $brand;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  color: white;
+  margin: 10px;
+}
+
+.footer-social-container {
+  align-self: center;
+}

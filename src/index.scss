@@ -2,17 +2,23 @@ $brand: #4156d6;
 $brand-accent: #fff764;
 $brand-light: #f2f2f4;
 $brand-dark: #2b2b2b;
+$font-color: #525352;
 
 html, body, #root {
   margin: 0;
   height: 100%;
   font-family: 'PT Sans', sans-serif;
-  color: $brand-dark;
-  // background-color: $brand-light;
+  color: $font-color;
 }
 
 body, h1, h2, h3 {
-  font-weight: 300
+  font-weight: 300;
+  color: $font-color;
+}
+
+button {
+  font-family: 'PT Sans', sans-serif;
+  color: $font-color;
 }
 
 .main-container {
@@ -28,13 +34,18 @@ body, h1, h2, h3 {
 }
 
 @import "./flexbox";
-@import "./app/email-grabber/email-grabber";
-@import "./app/footer/footer";
-@import "./app/header/header";
-@import "./app/progressbar/progressbar";
-@import "./app/main-info/main-info";
-@import "./app/main-info/main-info";
-@import "./app/socialMedia/socialMedia";
-@import "./app/press/press";
-@import "./app/setup/setup";
-@import "./app/news-carosel/news-carosel";
+
+@import "./app/components/BigVideo/BigVideo";
+@import "./app/components/EmailForm/EmailForm";
+@import "./app/components/footer/footer";
+@import "./app/components/header/header";
+@import "./app/components/news-carosel/news-carosel";
+@import "./app/components/socialMedia/socialMedia";
+@import "./app/components/features/features";
+@import "./app/components/sellPetbot/sellPetbot";
+@import "./app/components/button/button";
+
+@import "./app/pages/PressKitPage/PressKitPage";
+@import "./app/pages/SetupPage/SetupPage";
+@import "./app/pages/PreCampaignPage/PreCampaignPage";
+@import "./app/pages/CrowdfundingPage/CrowdfundingPage";

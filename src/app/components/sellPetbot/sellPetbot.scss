@@ -1,0 +1,52 @@
+.sellPetbot {
+  padding: 40px;
+  background-color: $brand;
+  display: flex;
+}
+
+.sellPetbot div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sellpetbot-image {
+  // background-image: url('./assets/aol.png');
+}
+
+.sellPetbot-title,
+.sellPetbot-desc {
+  color: white;
+  text-align: center;
+}
+
+.sellpetbot-price {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 130px;
+  margin: -21px 0 0 0;
+}
+
+.now-at {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: white;
+}
+
+.now-at:before,
+.now-at:after {
+  content: '';
+  display: inline-block;
+  width: 80px;
+  height: 1px;
+  background-color: white;
+  position: relative;
+  top: -4px;
+  margin: 0 20px;
+}

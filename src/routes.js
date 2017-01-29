@@ -1,31 +1,29 @@
 export default routesConfig;
 
 /** @ngInject */
-function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
-  $locationProvider.html5Mode(true).hashPrefix('!');
-  // $locationProvider.html5Mode(true);
-  // $locationProvider.hashPrefix('');
+function routesConfig($stateProvider, $urlRouterProvider) {
+  // $locationProvider.html5Mode(true).hashPrefix('!');
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
-    .state('app', {
+    .state('PetBot', {
       url: '/',
-      component: 'app'
+      component: 'preCampaignPage'
     })
     .state('crowdfunding', {
       url: '/crowdfunding',
-      component: 'crowdfunding'
+      component: 'crowdfundingPage'
     })
     .state('press', {
       url: '/press',
-      component: 'press'
+      component: 'pressKitPage'
     })
     .state('help', {
       url: '/help',
-      redirectTo: 'setup'
+      redirectTo: 'setupPage'
     })
     .state('setup', {
       url: '/setup',
-      component: 'setup'
+      component: 'setupPage'
     });
 }

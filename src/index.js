@@ -1,37 +1,38 @@
 import angular from 'angular';
 import 'angular-ui-router';
-import progressbar from 'angular-ui-bootstrap/src/progressbar';
 
 import routesConfig from './routes';
 
-import {main} from './app/main/main';
-import {header} from './app/header/header';
-import {footer} from './app/footer/footer';
-import {progressBar} from './app/progressBar/progressBar';
-import {prizes} from './app/prizes/prizes';
-import {mainInfo} from './app/main-info/main-info';
-import {press} from './app/press/press';
-import {setup} from './app/setup/setup';
-import {socialMedia} from './app/socialMedia/socialMedia.js';
-import {newsCarosel} from './app/news-carosel/news-carosel.js';
+import {header} from './app/components/header/header';
+import {footer} from './app/components/footer/footer';
+import {socialMedia} from './app/components/socialMedia/socialMedia.js';
+import {newsCarosel} from './app/components/news-carosel/news-carosel.js';
+import {BigVideo} from './app/components/BigVideo/BigVideo.js';
+import {EmailForm} from './app/components/EmailForm/EmailForm.js';
+import {features} from './app/components/features/features.js';
+import {button} from './app/components/button/button.js';
+import {sellPetbot} from './app/components/sellPetbot/sellPetbot.js';
 
-import {crowdfunding} from './app/crowdfunding/crowdfunding';
-import {emailGrabber} from './app/email-grabber/email-grabber';
+import {PressKitPage} from './app/pages/PressKitPage/PressKitPage';
+import {SetupPage} from './app/pages/SetupPage/SetupPage';
+import {PreCampaignPage} from './app/pages/PreCampaignPage/PreCampaignPage';
+import {CrowdfundingPage} from './app/pages/CrowdfundingPage/CrowdfundingPage';
 
 import './index.scss';
 
 angular
-  .module('app', ['ui.router', progressbar])
+  .module('PetBot', ['ui.router'])
   .config(routesConfig)
-  .component('app', main)
   .component('header', header)
-  .component('progressBar', progressBar)
   .component('footer', footer)
-  .component('emailGrabber', emailGrabber)
-  .component('prizes', prizes)
-  .component('mainInfo', mainInfo)
+  .component('features', features)
+  .component('pButton', button)
+  .component('preCampaignPage', PreCampaignPage)
   .component('socialMedia', socialMedia)
-  .component('press', press)
-  .component('setup', setup)
+  .component('pressKitPage', PressKitPage)
+  .component('sellPetbot', sellPetbot)
+  .component('setupPage', SetupPage)
+  .component('crowdfundingPage', CrowdfundingPage)
   .component('newsCarosel', newsCarosel)
-  .component('crowdfunding', crowdfunding);
+  .component('emailForm', EmailForm)
+  .component('bigVideo', BigVideo);
