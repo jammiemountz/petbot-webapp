@@ -67,6 +67,7 @@
 
 .content-holder {
   width: 100%;
+  overflow: hidden;
   padding: 60px 30px;
   box-sizing: border-box;
   position: relative;
@@ -135,7 +136,7 @@
   transition: all .3s ease;
   height: 40px;
   width: 200px;
-  background-color: $brand-light;
+  background-color: $brand;
   color: grey;
   border: none;
   border-radius: 5px;
