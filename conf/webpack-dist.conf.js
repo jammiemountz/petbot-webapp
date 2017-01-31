@@ -25,11 +25,24 @@ module.exports = {
         ]
       },
       {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        loaders: [
+          'file-loader'
+        ]
+      },
+      {
         test: /\.(css|scss)$/,
-        loaders: ExtractTextPlugin.extract({
-          fallbackLoader: 'style',
-          loader: 'css?minimize!sass!postcss'
-        })
+        loaders: [
+          'style',
+          'css',
+          'sass',
+          'postcss'
+        ]
+        // loaders: ExtractTextPlugin.extract({
+        //   fallbackLoader: 'style',
+        //   loader: 'css?minimize!sass!postcss'
+        // })
+        // loader: ExtractTextPlugin.extract({fallbackLoader:'style-loader', loader:'css?minimize!sass!postcss'})
       },
       {
         test: /\.js$/,
