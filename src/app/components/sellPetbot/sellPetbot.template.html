@@ -1,12 +1,24 @@
 <div class="sellPetbot">
-  <div class="sellpetbot-image"></div>
-  <div class="petbot-content">
+  <div class="sellpetbot-image section"></div>
+  <div class="petbot-content section">
     <h1 class="sellPetbot-title">The Petbot</h1>
     <p class="sellPetbot-desc">The PetBot smart monitor is now available to pre-order for a limited time. Estimated delivery in May 2017.</p>
-    <p class="now-at">Now At</p>
+    <p class="caps white framed">Now At</p>
     <p class="sellpetbot-price">199</p>
-    <p-button
-      content="PREORDER NOW"
-      type="cta"
-    ></p-button>
+
+    <p class="caps white">Only</p>
+    <div class="counter-container">
+      <div ng-repeat="number in sellPetbotCtrl.numbers track by $index">
+        <h1 class="counter-number">{{number}}</h1>
+      </div>
+    </div>
+    <p class="caps white">Days left to order</p>
+
+    <div class="cta-wrapper">
+      <p-button
+        content="PREORDER NOW"
+        type="cta"
+      ></p-button>
+    </div>
   </div>
+</div>

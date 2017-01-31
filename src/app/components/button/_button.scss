@@ -8,9 +8,29 @@
   font-size: 15px;
   letter-spacing: 2px;
   font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+
+.button-accent {
+  transition: all 0.5s ease;
+  transform: scale(0);
+  display: inline-block;
+  position: absolute;
+  left: 82%;
+  top: 10px;
+  height: 20px;
+  width: 20px;
 }
 
 .button.cta {
   background-color: $brand-accent;
   color: $brand;
+  transition: all 0.5s ease;
+  &:hover {
+    padding: 0 48px 0 40px;
+    .button-accent {
+      transform: scale(1);
+    }
+  }
 }

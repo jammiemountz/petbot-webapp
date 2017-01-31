@@ -7,6 +7,7 @@
   min-height: 660px;
   display:flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .form-container {
@@ -153,6 +154,6 @@
   stroke: $brand-accent;
 }
 
-.content-icon-stroke {
+.content-holder .content-icon-stroke {
   stroke: white;
 }

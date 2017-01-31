@@ -1,3 +1,4 @@
 <button ng-class="['button', btnCtrl.type]">
   {{ btnCtrl.content }}
+  <div class="button-accent" ng-include="'./assets/paw.svg'" ng-if="btnCtrl.type === 'cta'">!</div>
 </button>

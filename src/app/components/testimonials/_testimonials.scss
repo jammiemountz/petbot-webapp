@@ -1,0 +1,72 @@
+.testimonials-container {
+  background-color: $brand;
+  padding: 40px 80px;
+  color: white;
+  height: 300px;
+  position: relative;
+}
+
+.testimonial-carosel {
+  margin-top: 35px;
+}
+
+.testimonial,
+.author {
+  text-align: center;
+}
+
+.testimonial-animate {
+  position: relative;
+}
+
+.testimonial-content-container {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-quote {
+  font-size: 70px;
+  line-height: 0px;
+  margin: 30px 15px;
+}
+
+.carosel-toggle {
+  display: inline-block;
+}
+
+.carosel-toggle-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 200px;
+}
+
+.toggle-circle {
+  height: 10px;
+  width: 10px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #5c73ff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.toggle-circle.selected {
+  background-color: white;
+}
+
+.testimonial-animate.ng-enter, .testimonial-animate.ng-leave {
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.testimonial-animate.ng-enter,
+.testimonial-animate.ng-leave.ng-leave-active {
+  opacity:0;
+  transform: translateY(10px);
+}
+
+.testimonial-animate.ng-leave,
+.testimonial-animate.ng-enter.ng-enter-active {
+  opacity:1;
+  transform: translateY(0);
+}

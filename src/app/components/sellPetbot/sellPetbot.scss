@@ -2,17 +2,28 @@
   padding: 40px;
   background-color: $brand;
   display: flex;
+  flex-direction: column;
+  @media (min-width: 745px) {
+    flex-direction: row;
+  }
 }
 
-.sellPetbot div {
-  width: 50%;
+.sellPetbot .section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 200px;
+  @media (min-width: 745px) {
+    width: 50%;
+    min-height: 0;
+  }
 }
 
 .sellpetbot-image {
-  // background-image: url('./assets/aol.png');
+  background-image: url('./assets/petbot-angle.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .sellPetbot-title,
@@ -26,27 +37,32 @@
   color: white;
   font-weight: bold;
   font-size: 130px;
-  margin: -21px 0 0 0;
+  line-height: 120px;
+  margin: 5px 0 0 0;
 }
 
-.now-at {
-  text-transform: uppercase;
+.counter-container {
+  display: flex;
+}
+
+.counter-number {
+  min-width: 60px;
   text-align: center;
-  font-size: 12px;
-  text-align: center;
-  letter-spacing: 2px;
+  margin: 0 5px;
+  padding: 10px 0;
+  font-size: 45px;
   font-weight: bold;
-  color: white;
+  background-color: white;
+  color: $brand;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,afb3d8+50,ffffff+51,ffffff+51 */
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(175,179,216,1) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 51%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(175,179,216,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 51%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(175,179,216,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
-.now-at:before,
-.now-at:after {
-  content: '';
-  display: inline-block;
-  width: 80px;
-  height: 1px;
-  background-color: white;
-  position: relative;
-  top: -4px;
-  margin: 0 20px;
+.cta-wrapper {
+  margin: 20px 0 30px 0;
 }

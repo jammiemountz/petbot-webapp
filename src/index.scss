@@ -21,6 +21,10 @@ button {
   color: $font-color;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -33,6 +37,42 @@ button {
   flex-direction: column;
 }
 
+.caps.white {
+  color: white;
+}
+
+.caps {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.framed:before,
+.framed:after {
+  content: '';
+  display: inline-block;
+  width: 80px;
+  height: 1px;
+  position: relative;
+  top: -4px;
+  margin: 0 20px;
+  background-color: $font-color;
+}
+
+.framed.small:before,
+.framed.small:after {
+  width: 35px;
+  margin: 0 10px;
+}
+
+.framed.white:before,
+.framed.white:after {
+  background-color: white;
+}
+
 @import "./flexbox";
 
 @import "./app/components/BigVideo/BigVideo";
@@ -43,7 +83,10 @@ button {
 @import "./app/components/socialMedia/socialMedia";
 @import "./app/components/features/features";
 @import "./app/components/sellPetbot/sellPetbot";
+@import "./app/components/heroImage/heroImage";
 @import "./app/components/button/button";
+@import "./app/components/testimonials/testimonials";
+@import "./app/components/team/team";
 
 @import "./app/pages/PressKitPage/PressKitPage";
 @import "./app/pages/SetupPage/SetupPage";
