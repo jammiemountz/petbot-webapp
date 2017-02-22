@@ -1,0 +1,44 @@
+.selfie-testimonials-container {
+  padding: 60px 0px 100px 60px;
+  background-color: $brand;
+  position: relative;
+}
+
+.scroller {
+  overflow: scroll;
+}
+
+.selfie-testimonial-arrow {
+  position: absolute;
+  height: 100%;
+  width: 60px;
+  // background-color: white;
+  top: 0;
+  right: 0;
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.66) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.66) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.66) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#a8ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+.selfie-testimonials-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.selfie-container {
+  width: 2400px;
+  overflow: hidden;
+}
+
+.selfie-video {
+  max-width: 400px;
+  max-height: 300px;
+  display: inline-block;
+}
+
+.selfie-video-container {
+  display: inline-block;
+  margin: 0 40px;
+}

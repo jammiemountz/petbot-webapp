@@ -1,0 +1,15 @@
+<div class="selfie-testimonials-container">
+  <div class="selfie-testimonial-arrow"></div>
+
+  <h1 class="selfie-testimonials-title">The proof is in the selfie.</h1>
+  <div class="scroller">
+    <div class="selfie-container">
+      <div class="selfie-video-container" ng-repeat="ending in ['1.mov', '2.mov', '3.mov', '4.mp4', '5.mp4']">
+        <video class="selfie-video" preload="auto" loop="true" autoplay>
+            <source src="{{'assets/selfie-' + ending}}" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+</div>

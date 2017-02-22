@@ -3,29 +3,32 @@ class featuresController {
   constructor() {
     this.features = [
       {
-        image: '/assets/icon-spontaneous.svg',
-        text: 'See your pets with live video'
-      },
-      {
+        title: 'Calm them.',
         image: '/assets/icon-bark-recognition.svg',
-        text: 'You can play your own voice for your pet'
+        text: 'Customize greetings and record your voice'
       },
       {
-        image: '/assets/icon-versitile-treats.svg',
-        text: 'PetBot will send you video Pet Selfies'
-      },
-      {
-        image: '/assets/icon-refill.svg',
-        text: 'You can refill PetBot easily'
-      },
-      {
-        image: '/assets/icon-durability.svg',
-        text: 'Easily mount PetBot on the wall to keep it out of reach'
-      },
-      {
+        title: 'Treat them.',
         image: '/assets/icon-positive-reinforce.svg',
-        text: 'PetBot uses healthy positive reinforcement - ideal to help train your pet'
+        text: 'Give your pets treats remotely.'
+      },
+      {
+        title: 'Love them.',
+        image: '/assets/icon-spontaneous.svg',
+        text: 'Take pet selfies and videos'
       }
+      // {
+      //   image: '/assets/icon-versitile-treats.svg',
+      //   text: 'PetBot will send you video Pet Selfies'
+      // },
+      // {
+      //   image: '/assets/icon-refill.svg',
+      //   text: 'You can refill PetBot easily'
+      // },
+      // {
+      //   image: '/assets/icon-durability.svg',
+      //   text: 'Easily mount PetBot on the wall to keep it out of reach'
+      // },
     ];
   }
 }

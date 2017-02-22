@@ -15,9 +15,12 @@ import {button} from './app/components/button/button.js';
 import {heroImage} from './app/components/heroImage/heroImage.js';
 import {sellPetbot} from './app/components/sellPetbot/sellPetbot.js';
 import {testimonials} from './app/components/testimonials/testimonials.js';
+import {selfieTestimonials} from './app/components/selfie-testimonials/selfie-testimonials.js';
 import {team} from './app/components/team/team.js';
+import {specs} from './app/components/specs/specs.js';
 
 import {PressKitPage} from './app/pages/PressKitPage/PressKitPage';
+import {TeamPage} from './app/pages/TeamPage/TeamPage';
 import {SetupPage} from './app/pages/SetupPage/SetupPage';
 import {PreCampaignPage} from './app/pages/PreCampaignPage/PreCampaignPage';
 import {CrowdfundingPage} from './app/pages/CrowdfundingPage/CrowdfundingPage';
@@ -32,12 +35,15 @@ angular
   .component('features', features)
   .component('pButton', button)
   .component('preCampaignPage', PreCampaignPage)
+  .component('teamPage', TeamPage)
   .component('socialMedia', socialMedia)
   .component('pressKitPage', PressKitPage)
   .component('sellPetbot', sellPetbot)
   .component('heroImage', heroImage)
   .component('setupPage', SetupPage)
   .component('testimonials', testimonials)
+  .component('selfieTestimonials', selfieTestimonials)
+  .component('specs', specs)
   .component('team', team)
   .component('crowdfundingPage', CrowdfundingPage)
   .component('newsCarosel', newsCarosel)

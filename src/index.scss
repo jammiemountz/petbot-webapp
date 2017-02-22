@@ -16,6 +16,10 @@ body, h1, h2, h3 {
   color: $font-color;
 }
 
+.white {
+  color: white;
+}
+
 button {
   font-family: 'PT Sans', sans-serif;
   color: $font-color;
@@ -31,6 +35,7 @@ button {
   min-height: 100%;
   overflow:hidden;
 }
+
 .main {
   flex: 1;
   display: flex;
@@ -85,10 +90,12 @@ button {
 @import "./app/components/sellPetbot/sellPetbot";
 @import "./app/components/heroImage/heroImage";
 @import "./app/components/button/button";
-@import "./app/components/testimonials/testimonials";
+@import "./app/components/selfie-testimonials/selfie-testimonials";
 @import "./app/components/team/team";
+@import "./app/components/specs/specs";
 
 @import "./app/pages/PressKitPage/PressKitPage";
 @import "./app/pages/SetupPage/SetupPage";
 @import "./app/pages/PreCampaignPage/PreCampaignPage";
+@import "./app/pages/TeamPage/TeamPage";
 @import "./app/pages/CrowdfundingPage/CrowdfundingPage";
