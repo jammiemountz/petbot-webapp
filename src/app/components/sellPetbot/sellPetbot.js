@@ -2,6 +2,10 @@ class sellPetbotCtrl {
   /** @ngInject */
   constructor() {
     this.numbers = [0, 2, 4];
+    this.image = true;
+    this.switch = function (val) {
+      this.image = val;
+    };
   }
 }
 

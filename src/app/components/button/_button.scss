@@ -10,6 +10,11 @@
   font-weight: bold;
   position: relative;
   cursor: pointer;
+  @media (max-width: 800px) {
+    height: 30px;
+    font-size: 10px;
+    padding: 0 20px;
+  }
 }
 
 .button-accent {
@@ -24,8 +29,8 @@
 }
 
 .button.cta {
-  background-color: $brand-accent;
-  color: $brand;
+  background-color: $brand;
+  color: white;
   transition: all 0.5s ease;
   &:hover {
     padding: 0 48px 0 40px;

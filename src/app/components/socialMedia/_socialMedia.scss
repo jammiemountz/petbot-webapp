@@ -4,6 +4,10 @@
   height: 40px;
   margin: 10px 15px 0 0;
   background-size: 90px 60px;
+  @media (max-width: 800px) {
+    width: 30px;
+    height: 30px;
+  }
 }
 .social-media:hover .accent-fill {
   fill: white;
@@ -21,4 +25,7 @@
 .social-media-container {
   display: flex;
   flex-direction: row;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 }

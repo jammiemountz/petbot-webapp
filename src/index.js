@@ -15,6 +15,8 @@ import {button} from './app/components/button/button.js';
 import {heroImage} from './app/components/heroImage/heroImage.js';
 import {sellPetbot} from './app/components/sellPetbot/sellPetbot.js';
 import {testimonials} from './app/components/testimonials/testimonials.js';
+import {textComponent} from './app/components/textComponent/textComponent.js';
+import TryItOut from './app/directives/tryItOut/tryItOut.js';
 import {selfieTestimonials} from './app/components/selfie-testimonials/selfie-testimonials.js';
 import {team} from './app/components/team/team.js';
 import {specs} from './app/components/specs/specs.js';
@@ -30,6 +32,7 @@ import './index.scss';
 angular
   .module('PetBot', ['ui.router', ngAnimate])
   .config(routesConfig)
+  .directive('tryItOut', () => new TryItOut) // eslint-disable-line
   .component('header', header)
   .component('footer', footer)
   .component('features', features)
@@ -40,6 +43,7 @@ angular
   .component('pressKitPage', PressKitPage)
   .component('sellPetbot', sellPetbot)
   .component('heroImage', heroImage)
+  .component('textComponent', textComponent)
   .component('setupPage', SetupPage)
   .component('testimonials', testimonials)
   .component('selfieTestimonials', selfieTestimonials)

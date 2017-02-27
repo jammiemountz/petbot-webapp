@@ -1,19 +1,32 @@
 <div class="sellPetbot">
-  <div class="sellpetbot-image section"></div>
-  <div class="petbot-content section">
+  <div class="section">
+    <div ng-class="sellPetbotCtrl.image ? 'sellpetbot-image-1' : 'sellpetbot-image-2'"></div>
+    <div class="sellpetbot-toggle">
+      <div
+        ng-click="sellPetbotCtrl.switch(true)"
+        "[style4, {orange: warning}]"
+        ng-class="sellPetbotCtrl.image ? 'toggle-option-1 highlighted' : 'toggle-option-1'"
+      ></div>
+      <div
+        ng-click="sellPetbotCtrl.switch(false)"
+        ng-class="sellPetbotCtrl.image ? 'toggle-option-2' : 'toggle-option-2 highlighted'"
+      ></div>
+    </div>
+  </div>
+  <div class="sellpetbot-content section">
     <h1 class="sellPetbot-title">We get it. You feel guilty leaving them.</h1>
     <p class="sellPetbot-desc">Need peace of mind for when you’ve left your pet alone? PetBot is the only Wi-Fi pet monitoring system that offers video/voice record, treat dispensing and adorable video selfies. Pre-order your PetBot now, available for a limited time.*</p>
-    <small class="white"><i>*Pre-orders are expected to ship in May 2017.</i></small>
-    <p class="caps white framed">Now At</p>
+    <small><i>*Pre-orders are expected to ship in June 2017.</i></small>
+    <p class="caps framed">Now At</p>
     <p class="sellpetbot-price">$199</p>
 
-    <p class="caps white">Pre-Order Sale</p>
+    <p class="caps">Pre-Order Sale</p>
     <div class="counter-container">
       <div ng-repeat="number in sellPetbotCtrl.numbers track by $index">
         <h1 class="counter-number">{{number}}</h1>
       </div>
     </div>
-    <p class="caps white">Days left to order</p>
+    <p class="caps">Days left to order</p>
 
     <div class="cta-wrapper">
       <p-button

@@ -1,3 +1,26 @@
 .specs {
-  padding: 40px;
+  text-align: center;
+}
+
+.specs-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.specs-content-item {
+  width: 200px;
+  text-align: center;
+  margin: 20px;
+}
+
+.specs-content-icon {
+  width: 150px;
+  margin: 0 auto;
+  @media (max-width: 800px) {
+    width: 100px;
+  }
+}
+
+.specs-divider {
+  margin: 0 15px;
 }

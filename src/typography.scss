@@ -1,0 +1,41 @@
+body, h1, h2, h3 {
+  letter-spacing: 0.3px;
+  font-weight: 300;
+  color: $font-color;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2em;
+  @media (max-width: 800px) {
+    font-size: 1.5em;
+  }
+}
+
+h2 {
+  font-size: 1.5em;
+  @media (max-width: 800px) {
+    font-size: 1em;
+  }
+}
+
+h3 {
+  font-size: 1.17em;
+  @media (max-width: 800px) {
+    font-size: .9em;
+  }
+}
+
+p {
+  font-size: 1em;
+  @media (max-width: 800px) {
+    font-size: .7em;
+  }
+}
+
+small {
+  font-size: 0.8em;
+  @media (max-width: 800px) {
+    font-size: .6em;
+  }
+}
