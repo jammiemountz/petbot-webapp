@@ -1,0 +1,8 @@
+<div class="team">
+  <div ng-repeat="person in teamController.members" class="team-container">
+    <div ng-include="person.caricature" class="team-image"></div>
+    <p class="team-text bold">{{person.name}}</p>
+    <p class="caps framed small">{{person.title}}</p>
+    <p class="team-text">{{person.content}}</p>
+  </div>
+</div>

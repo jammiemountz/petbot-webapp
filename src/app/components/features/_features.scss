@@ -1,0 +1,46 @@
+.features {
+  display: flex;
+  padding: 80px 115px;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 33%;
+  margin: 40px 0;
+}
+
+.feature-image {
+  height: 120px;
+  width: 120px;
+  &:hover {
+    animation: twist 1s ease forwards;
+  }
+}
+
+.feature-text {
+  max-width: 160px;
+  text-align: center;
+}
+
+.content-icon-stroke {
+  stroke: $font-color;
+}
+
+@keyframes twist {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

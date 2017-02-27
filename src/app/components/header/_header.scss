@@ -1,0 +1,19 @@
+.header {
+  padding: 0 20px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  align-items: center;
+  @media (min-width: 800px) {
+    background-color: transparent;
+  }
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 10px;
+  height: 40px;
+  width: 150px;
+}

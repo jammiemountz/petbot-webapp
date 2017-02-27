@@ -2,17 +2,27 @@ $brand: #4156d6;
 $brand-accent: #fff764;
 $brand-light: #f2f2f4;
 $brand-dark: #2b2b2b;
+$font-color: #525352;
 
 html, body, #root {
   margin: 0;
   height: 100%;
   font-family: 'PT Sans', sans-serif;
-  color: $brand-dark;
-  // background-color: $brand-light;
+  color: $font-color;
 }
 
 body, h1, h2, h3 {
-  font-weight: 300
+  font-weight: 300;
+  color: $font-color;
+}
+
+button {
+  font-family: 'PT Sans', sans-serif;
+  color: $font-color;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .main-container {
@@ -27,14 +37,58 @@ body, h1, h2, h3 {
   flex-direction: column;
 }
 
+.caps.white {
+  color: white;
+}
+
+.caps {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.framed:before,
+.framed:after {
+  content: '';
+  display: inline-block;
+  width: 80px;
+  height: 1px;
+  position: relative;
+  top: -4px;
+  margin: 0 20px;
+  background-color: $font-color;
+}
+
+.framed.small:before,
+.framed.small:after {
+  width: 35px;
+  margin: 0 10px;
+}
+
+.framed.white:before,
+.framed.white:after {
+  background-color: white;
+}
+
 @import "./flexbox";
-@import "./app/email-grabber/email-grabber";
-@import "./app/footer/footer";
-@import "./app/header/header";
-@import "./app/progressbar/progressbar";
-@import "./app/main-info/main-info";
-@import "./app/main-info/main-info";
-@import "./app/socialMedia/socialMedia";
-@import "./app/press/press";
-@import "./app/setup/setup";
-@import "./app/news-carosel/news-carosel";
+
+@import "./app/components/BigVideo/BigVideo";
+@import "./app/components/EmailForm/EmailForm";
+@import "./app/components/footer/footer";
+@import "./app/components/header/header";
+@import "./app/components/news-carosel/news-carosel";
+@import "./app/components/socialMedia/socialMedia";
+@import "./app/components/features/features";
+@import "./app/components/sellPetbot/sellPetbot";
+@import "./app/components/heroImage/heroImage";
+@import "./app/components/button/button";
+@import "./app/components/testimonials/testimonials";
+@import "./app/components/team/team";
+
+@import "./app/pages/PressKitPage/PressKitPage";
+@import "./app/pages/SetupPage/SetupPage";
+@import "./app/pages/PreCampaignPage/PreCampaignPage";
+@import "./app/pages/CrowdfundingPage/CrowdfundingPage";

@@ -1,0 +1,68 @@
+.sellPetbot {
+  padding: 40px;
+  background-color: $brand;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 745px) {
+    flex-direction: row;
+  }
+}
+
+.sellPetbot .section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  @media (min-width: 745px) {
+    width: 50%;
+    min-height: 0;
+  }
+}
+
+.sellpetbot-image {
+  background-image: url('./assets/petbotAngle.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.sellPetbot-title,
+.sellPetbot-desc {
+  color: white;
+  text-align: center;
+}
+
+.sellpetbot-price {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 130px;
+  line-height: 120px;
+  margin: 5px 0 0 0;
+}
+
+.counter-container {
+  display: flex;
+}
+
+.counter-number {
+  min-width: 60px;
+  text-align: center;
+  margin: 0 5px;
+  padding: 10px 0;
+  font-size: 45px;
+  font-weight: bold;
+  background-color: white;
+  color: $brand;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,afb3d8+50,ffffff+51,ffffff+51 */
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(175,179,216,1) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 51%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(175,179,216,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 51%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(175,179,216,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.cta-wrapper {
+  margin: 20px 0 30px 0;
+}

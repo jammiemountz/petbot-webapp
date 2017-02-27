@@ -1,0 +1,19 @@
+<div class="newscarosel--tiled" ng-if="newsCaroselCtrl.isTiled">
+  <a target='_blank' ng-repeat="article in newsCaroselCtrl.newsMentions" href="{{article.link}}">
+    <div class="news-article--tiled">
+      <img class="news-article-logo" ng-src="{{article.image}}" />
+      <p class="news-article-title">{{article.title}}</p>
+    </div>
+  </a>
+</div>
+
+<div class="newscarolsel--linear" ng-if="newsCaroselCtrl.isLinear">
+  <p class="news-as-seen-on">As Seen On</p>
+  <div class="newscarosel--linear-container">
+    <a target='_blank' ng-repeat="article in newsCaroselCtrl.newsMentions" href="{{article.link}}">
+      <div class="news-article--linear">
+        <img class="news-article-logo--linear" ng-src="{{article.image}}" />
+      </div>
+    </a>
+  </div>
+</div>

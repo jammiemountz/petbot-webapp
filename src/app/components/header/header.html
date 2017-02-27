@@ -1,0 +1,11 @@
+<div class="header">
+  <a href="/#"><div class="logo" ng-include="'assets/petbot-logo-dark.svg'"></div></a>
+  <p-button
+    content="PREORDER NOW"
+    type="cta"
+    ng-if="headerCtrl.hideCta === 'false'"
+  ></p-button>
+  <social-media
+    ng-if="headerCtrl.hideCta==='true'"
+  ></social-media>
+</div>
