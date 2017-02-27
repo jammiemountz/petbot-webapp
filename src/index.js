@@ -1,5 +1,6 @@
 import angular from 'angular';
 import 'angular-ui-router';
+import 'angular-filter';
 import ngAnimate from 'angular-animate';
 
 import routesConfig from './routes';
@@ -30,7 +31,7 @@ import {CrowdfundingPage} from './app/pages/CrowdfundingPage/CrowdfundingPage';
 import './index.scss';
 
 angular
-  .module('PetBot', ['ui.router', ngAnimate])
+  .module('PetBot', ['ui.router', ngAnimate, 'angular.filter'])
   .config(routesConfig)
   .directive('tryItOut', () => new TryItOut) // eslint-disable-line
   .component('header', header)
