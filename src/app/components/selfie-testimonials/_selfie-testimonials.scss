@@ -1,0 +1,83 @@
+.selfie-testimonials-container {
+  padding: 60px 0px 60px 60px;
+  position: relative;
+}
+
+.scroller {
+  overflow: scroll;
+  margin-left: -60px;
+  z-index: 4;
+}
+
+.prompt {
+  // color: white;
+  position: absolute;
+  animation: fall 1s ease-in forwards;
+}
+
+.selfie-testimonial-arrow {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  top: 0;
+  right: 0;
+  padding-left: 40px;
+  z-index: 3;
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.55) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.55) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.55) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#a8ffffff',GradientType=1 ); /* IE6-9 */
+  animation: pulse linear 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    width: 40px;
+  }
+  to {
+    width: 70px;
+  }
+}
+@keyframes fall {
+  0% {
+    transform: translate(40px, 100px) scale(0) rotate(-40deg);
+  }
+  30% {
+    transform: translate(-0px, 0px) scale(.5) rotate(60deg);
+  }
+  100% {
+    transform: translate(-100px, 500px) scale(1) rotate(0);
+  }
+}
+
+.selfie-testimonials-title {
+  // color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.selfie-container {
+  width: 2400px;
+  height: 350px;
+  overflow: hidden;
+  @media (max-width: 800px) {
+    width: 1900px;
+    height: 250px;
+  }
+}
+
+.selfie-video {
+  max-width: 400px;
+  max-height: 300px;
+  display: inline-block;
+  z-index: 2;
+  @media (max-width: 800px) {
+    max-width: 300px;
+    max-height: 200px;
+  }
+}
+
+.selfie-video-container {
+  display: inline-block;
+  margin: 0 40px;
+}

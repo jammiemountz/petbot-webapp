@@ -5,3 +5,79 @@
 .title.white {
   color: white;
 }
+
+.module {
+  margin: 80px 0;
+  @media (max-width: 800px) {
+    margin: 40px 0;
+  }
+}
+
+.grey-stripes-container {
+  position: relative;
+}
+
+.background-grey {
+  background-color: $brand-cool-grey;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.module-testimonials {
+  background-color: $brand-cool-grey;
+}
+
+.grey-stripes {
+  pointer-events: none;
+}
+
+.grey-stripes-1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0) 15%, #fff5f5 30%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 94%);
+  margin: -80px 0;
+  z-index: -1;
+}
+.grey-stripes-2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(174deg, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0) 30%, rgba(222, 255, 252, 0.54) 30%, rgba(255, 255, 255, 0) 94%);;
+  margin: -80px 0;
+  z-index: -1;
+}
+
+.grey-stripes-3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(238deg, rgba(255, 255, 255, 0) 15%, #fff5f5 30%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 94%);
+  margin: -80px 0;
+  z-index: -1;
+}
+.grey-stripes-4 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(147deg, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0) 30%, rgba(254, 255, 222, 0.54) 30%, rgba(255, 255, 255, 0) 94%);
+  margin: -80px 0;
+  z-index: -1;
+}
+
+.grey-stripes-5 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(291deg, rgba(255, 255, 255, 0) 15%, #dee0e6 30%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 94%);
+  z-index: -1;
+}
+.grey-stripes-6 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(195deg, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.28) 30%, rgba(255, 255, 255, 0) 94%);
+  z-index: -1;
+}

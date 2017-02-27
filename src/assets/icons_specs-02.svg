@@ -1,0 +1,37 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 156.33">
+  <defs>
+    <style>
+      .specs-icon-2-cls-1 {
+        fill: #bcbbbb;
+      }
+
+      .specs-icon-2-cls-2 {
+        fill: #cecccc;
+      }
+
+      .specs-icon-2-cls-3 {
+        fill: gray;
+      }
+
+      .specs-icon-2-cls-4 {
+        fill: #fff;
+      }
+
+      .specs-icon-2-cls-5 {
+        fill: #cecece;
+      }
+    </style>
+  </defs>
+  <title>icons_specs</title>
+  <g>
+    <rect class="specs-icon-2-cls-1" y="0.33" width="184.67" height="156"/>
+    <polygon class="specs-icon-2-cls-2" points="0 77 185 77 184.67 0 0 0 0 77"/>
+    <path class="specs-icon-2-cls-3" d="M96.9,20.71c-.22-5.16-2.38-8.6-5.39-8.6C88.9,12.11,87,15,86.32,20H51.87c-.68-5-2.88-7.89-5.49-7.89-3.12,0-6,4.08-6.1,9.52-2.38,2-4.29,4.68-4.29,8V39c0,6,5.68,12,11.68,12H91.29c6,0,9.71-6,9.71-12V29.65C101,26,99.73,22.68,96.9,20.71Z"/>
+    <rect class="specs-icon-2-cls-4" x="36" y="32" width="65" height="75"/>
+    <path class="specs-icon-2-cls-3" d="M60.15,81c.08,4,4.22,10.78,9.33,10.78S78.72,85,78.8,81Z"/>
+    <circle class="specs-icon-2-cls-1" cx="68.7" cy="55.09" r="7.01"/>
+    <circle class="specs-icon-2-cls-3" cx="68.7" cy="55.09" r="2.08"/>
+    <path class="specs-icon-2-cls-3" d="M119,110.66a2.6,2.6,0,0,0,.31-2.41,2.5,2.5,0,0,0-3.31-1.4,2.44,2.44,0,0,0-1.47,3.46l-5,1.87a2.44,2.44,0,0,0-3.39-1.62,2.54,2.54,0,0,0,.28,4.88,2.57,2.57,0,0,0-.31,2.4,2.67,2.67,0,0,0,3.38,1.59,2.54,2.54,0,0,0,1.54-3.27l5-1.87a2.53,2.53,0,0,0,3.32,1.43,2.64,2.64,0,0,0,1.5-3.39A2.68,2.68,0,0,0,119,110.66Z"/>
+    <ellipse class="specs-icon-2-cls-5" cx="99.92" cy="129.75" rx="12.86" ry="2.75"/>
+  </g>
+</svg>

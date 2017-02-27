@@ -11,7 +11,7 @@ class teamController {
       {
         name: 'Misko Dzamba',
         title: 'CTO',
-        content: 'I wanted a way to check in on my cats, Bubs and Daisy, while at work.',
+        content: 'If my cats nap all day while I’m at work, they keep me up at night! I like to send them treats to keep them awake and happy when I’m not there.',
         caricature: '/assets/team-misko.svg'
       },
       {
@@ -23,13 +23,13 @@ class teamController {
       {
         name: 'Erika Hoyle',
         title: 'Social Outreach',
-        content: 'Connecting people to their pets is my passion. Plus I love my cat Cat.',
+        content: 'Connecting people to their pets is my passion. Plus I love my cat!',
         caricature: '/assets/team-erika.svg'
       },
       {
         name: 'Jammie Mountz',
         title: 'Web Developer',
-        content: 'I use the webcam to check on my pet, Misko.',
+        content: 'Our family dog Ollie lives at my parent’s house. My sisters and I miss him and still send him treats from where ever we are!',
         caricature: '/assets/team-jammie.svg'
       }
     ];

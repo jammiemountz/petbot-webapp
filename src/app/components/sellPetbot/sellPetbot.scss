@@ -1,9 +1,9 @@
 .sellPetbot {
-  padding: 40px;
-  background-color: $brand;
   display: flex;
   flex-direction: column;
-  @media (min-width: 745px) {
+  padding: 60px 40px;
+  justify-content: center;
+  @media (min-width: 800px) {
     flex-direction: row;
   }
 }
@@ -19,26 +19,82 @@
   }
 }
 
-.sellpetbot-image {
-  background-image: url('./assets/petbotAngle.png');
+.sellpetbot-image-1 {
+  background-image: url('./assets/petbot_new.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  max-width: 500px;
+  height: 80%;
+  width: 100%;
+}
+
+.sellpetbot-image-2 {
+  background-image: url('./assets/petbot_new_side.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  max-width: 500px;
+  height: 80%;
+  width: 100%;
+}
+
+.sellpetbot-toggle {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.toggle-option-1 {
+  display: inline-block;
+  height: 60px;
+  width: 50px;
+  background-image: url('./assets/petbot_new.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid transparent;
+  cursor: pointer;
+  &.highlighted {
+    border: 1px solid $brand;
+  }
+}
+
+.toggle-option-2 {
+  display: inline-block;
+  height: 60px;
+  width: 50px;
+  background-image: url('./assets/petbot_new_side.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid transparent;
+  cursor: pointer;
+  &.highlighted {
+    border: 1px solid $brand;
+  }
+}
+
+.sellpetbot-content {
+  max-width: 500px;
 }
 
 .sellPetbot-title,
 .sellPetbot-desc {
-  color: white;
+  // color: white;
   text-align: center;
 }
 
 .sellpetbot-price {
   text-align: center;
-  color: white;
+  color: #b7bac5;
   font-weight: bold;
   font-size: 130px;
   line-height: 120px;
   margin: 5px 0 0 0;
+  @media (max-width: 800px) {
+    font-size: 100px;
+  }
 }
 
 .counter-container {
@@ -53,13 +109,13 @@
   font-size: 45px;
   font-weight: bold;
   background-color: white;
-  color: $brand;
+  color: #9497a0;
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,afb3d8+50,ffffff+51,ffffff+51 */
   background: rgb(255,255,255); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(175,179,216,1) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 51%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(175,179,216,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 51%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(175,179,216,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(223,226,232,1) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 51%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(223,226,232,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 51%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(223,226,232,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 

@@ -85,4 +85,7 @@ a {
   position: relative;
   top: -4px;
   margin: 0 20px;
+  @media (max-width: 800px) {
+    width: 40px;
+  }
 }

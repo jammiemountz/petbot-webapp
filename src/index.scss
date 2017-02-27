@@ -3,6 +3,7 @@ $brand-accent: #fff764;
 $brand-light: #f2f2f4;
 $brand-dark: #2b2b2b;
 $font-color: #525352;
+$brand-cool-grey: #e3e5ea;
 
 html, body, #root {
   margin: 0;
@@ -11,9 +12,8 @@ html, body, #root {
   color: $font-color;
 }
 
-body, h1, h2, h3 {
-  font-weight: 300;
-  color: $font-color;
+.white {
+  color: white;
 }
 
 button {
@@ -31,6 +31,7 @@ button {
   min-height: 100%;
   overflow:hidden;
 }
+
 .main {
   flex: 1;
   display: flex;
@@ -60,6 +61,9 @@ button {
   top: -4px;
   margin: 0 20px;
   background-color: $font-color;
+  @media (max-width: 800px) {
+    width: 40px;
+  }
 }
 
 .framed.small:before,
@@ -74,6 +78,7 @@ button {
 }
 
 @import "./flexbox";
+@import "./typography";
 
 @import "./app/components/BigVideo/BigVideo";
 @import "./app/components/EmailForm/EmailForm";
@@ -84,11 +89,16 @@ button {
 @import "./app/components/features/features";
 @import "./app/components/sellPetbot/sellPetbot";
 @import "./app/components/heroImage/heroImage";
+@import "./app/components/textComponent/textComponent";
 @import "./app/components/button/button";
-@import "./app/components/testimonials/testimonials";
+@import "./app/components/selfie-testimonials/selfie-testimonials";
 @import "./app/components/team/team";
+@import "./app/components/specs/specs";
+
+@import "./app/directives/tryItOut/tryItOut";
 
 @import "./app/pages/PressKitPage/PressKitPage";
 @import "./app/pages/SetupPage/SetupPage";
 @import "./app/pages/PreCampaignPage/PreCampaignPage";
+@import "./app/pages/TeamPage/TeamPage";
 @import "./app/pages/CrowdfundingPage/CrowdfundingPage";
