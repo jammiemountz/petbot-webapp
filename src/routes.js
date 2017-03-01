@@ -34,6 +34,14 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       url: '/about',
       component: 'teamPage'
     })
+    .state('order', {
+      url: '/order',
+      component: 'orderFormPage'
+    })
+    .state('thanks', {
+      url: '/thanks',
+      component: 'thanksPage'
+    })
     .state('setup', {
       url: '/setup',
       component: 'setupPage'

@@ -1,0 +1,132 @@
+<form
+  controller="orderFormCtrl"
+  class="orderForm"
+  id="payment-form"
+>
+  <div class="form-row-howmany">
+    <label class="form-label-select" for="howMany">How Many?</label>
+    <select
+      ng-model="data.howMany"
+      class="form-input-select"
+      type="text"
+      name="howMany"
+    >
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+  </div>
+
+  <div class="form-row">
+    <label
+      class="form-label"
+      for="firstName"></label>
+    <input
+      ng-model="data.firstName"
+      placeholder="First Name"
+      class="form-input"
+      type='text'
+      name='firstName' />
+    <label
+      class="form-label"
+      for="lastName"></label>
+    <input
+      ng-model="data.lastName"
+      placeholder="Last Name"
+      class="form-input"
+      type='text'
+      name='lastName'/>
+    <label
+      class="form-label"
+      for="email"></label>
+    <input
+      ng-model="data.email"
+      placeholder="Email"
+      class="form-input"
+      type='email'
+      name='email'/>
+  </div>
+
+  <div class="form-row">
+    <label
+      class="form-label"
+      for="address"></label>
+    <input
+      ng-model="data.address1"
+      placeholder="Address"
+      class="form-input"
+      type='text'
+      name='address1'/>
+    <input
+      ng-model="data.address2"
+      placeholder="Address"
+      class="form-input"
+      type='text' name='address2'/>
+    <label
+      class="form-label"
+      for="city"></label>
+    <input
+      ng-model="data.city"
+      placeholder="City"
+      class="form-input"
+      type='text'
+      name='city'/>
+    <label
+      class="form-label"
+      for="state"></label>
+    <input
+      ng-model="data.state"
+      placeholder="State"
+      class="form-input"
+      type='text'
+      name='state'/>
+    <label
+      class="form-label"
+      for="zip"></label>
+    <input
+      ng-model="data.zip"
+      placeholder="Zip / Postal Code"
+      class="form-input"
+      type='text'
+      name='zip'/>
+    <label
+      class="form-label"
+      for="country"></label>
+    <input
+      ng-model="data.country"
+      placeholder="Country"
+      class="form-input"
+      type='text'
+      name='country'/>
+  </div>
+
+  <div class="form-row">
+    <label for="card-element">
+      Credit or debit card
+    </label>
+    <div id="card-element"></div>
+    <div id="card-errors"></div>
+  </div>
+
+  <div class="total">
+    <h2>${{data.howMany * 199}}</h2>
+    <button
+      ng-click="submitOrderForm()"
+      ng-disabled="loading"
+      class="form-button"
+    >
+      Submit Payment
+    </button>
+  </div>
+
+  <small>Trouble submitting, or need a bulk order? Email info@petbot.com</small>
+  <h4 id='error-content'></h4>
+
+</form>

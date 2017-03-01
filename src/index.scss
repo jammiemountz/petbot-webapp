@@ -96,9 +96,12 @@ button {
 @import "./app/components/specs/specs";
 
 @import "./app/directives/tryItOut/tryItOut";
+@import "./app/directives/orderForm/orderForm";
 
 @import "./app/pages/PressKitPage/PressKitPage";
+@import "./app/pages/ThanksPage/ThanksPage";
 @import "./app/pages/SetupPage/SetupPage";
 @import "./app/pages/PreCampaignPage/PreCampaignPage";
 @import "./app/pages/TeamPage/TeamPage";
 @import "./app/pages/CrowdfundingPage/CrowdfundingPage";
+@import "./app/pages/OrderFormPage/OrderFormPage";
