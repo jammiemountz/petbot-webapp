@@ -19,6 +19,7 @@ import {testimonials} from './app/components/testimonials/testimonials.js';
 import {textComponent} from './app/components/textComponent/textComponent.js';
 import {selfieTestimonials} from './app/components/selfie-testimonials/selfie-testimonials.js';
 import {team} from './app/components/team/team.js';
+import {infoLink} from './app/components/infoLink/infoLink.js';
 import {specs} from './app/components/specs/specs.js';
 
 import OrderForm from './app/directives/orderForm/orderForm.js';
@@ -42,6 +43,7 @@ angular
   .component('header', header)
   .component('footer', footer)
   .component('features', features)
+  .component('infoLink', infoLink)
   .component('pButton', button)
   .component('preCampaignPage', PreCampaignPage)
   .component('orderFormPage', OrderFormPage)

@@ -1,5 +1,6 @@
 <form
   controller="orderFormCtrl"
+  name="orderForm"
   class="orderForm"
   id="payment-form"
 >
@@ -8,103 +9,131 @@
     <select
       ng-model="data.howMany"
       class="form-input-select"
+      ng-change="calculateTotal()"
       type="text"
       name="howMany"
+      ng-init="data.howMany = '1'"
+      ng-options="amount for amount in amounts"
     >
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
     </select>
   </div>
 
   <div class="form-row">
+    {{data.email.invalid}}
     <label
       class="form-label"
       for="firstName"></label>
+    <span class="field-required" ng-if="this.$invalid === true">*</span>
     <input
+      required
       ng-model="data.firstName"
       placeholder="First Name"
       class="form-input"
       type='text'
+      pattern="[^<>;]+"
       name='firstName' />
     <label
       class="form-label"
       for="lastName"></label>
+    <span class="field-required" ng-if="data.lastName.$invalid">*</span>
     <input
+      required
       ng-model="data.lastName"
       placeholder="Last Name"
       class="form-input"
       type='text'
+      pattern="[^<>;]+"
       name='lastName'/>
     <label
       class="form-label"
       for="email"></label>
+    <span class="field-required" ng-if="data.email.$invalid">*</span>
     <input
+      required
       ng-model="data.email"
       placeholder="Email"
       class="form-input"
       type='email'
+      pattern="[\w.]+[@][\w.]+[.][\w]+"
       name='email'/>
+    <label
+      class="form-label"
+      for="phone"></label>
+    <span class="field-required" ng-if="data.phone.$invalid">*</span>
+    <input
+      required
+      ng-model="data.phone"
+      placeholder="Phone"
+      class="form-input"
+      type='text'
+      pattern="[0-9- ()]+"
+      name='phone'/>
   </div>
 
   <div class="form-row">
     <label
       class="form-label"
       for="address"></label>
+    <span class="field-required" ng-if="data.address1.$invalid">*</span>
     <input
+      required
       ng-model="data.address1"
       placeholder="Address"
       class="form-input"
       type='text'
+      pattern="[^<>;]+"
       name='address1'/>
     <input
       ng-model="data.address2"
       placeholder="Address"
       class="form-input"
+      pattern="[^<>;]*"
       type='text' name='address2'/>
     <label
       class="form-label"
       for="city"></label>
+    <span class="field-required" ng-if="data.city.$invalid">*</span>
     <input
+      required
       ng-model="data.city"
       placeholder="City"
       class="form-input"
       type='text'
+      pattern="[^<>;]+"
       name='city'/>
     <label
       class="form-label"
       for="state"></label>
+    <span class="field-required" ng-if="data.state.$invalid">*</span>
     <input
+      required
       ng-model="data.state"
-      placeholder="State"
+      placeholder="State/Province/Territory"
       class="form-input"
+      pattern="[^<>;]+"
       type='text'
       name='state'/>
     <label
       class="form-label"
       for="zip"></label>
+    <span class="field-required" ng-if="data.zip.$invalid">*</span>
     <input
+      required
       ng-model="data.zip"
       placeholder="Zip / Postal Code"
       class="form-input"
       type='text'
+      pattern="[\w -]+"
       name='zip'/>
-    <label
-      class="form-label"
-      for="country"></label>
-    <input
+    <select
+      required
       ng-model="data.country"
-      placeholder="Country"
-      class="form-input"
-      type='text'
-      name='country'/>
+      class="form-input-select-country"
+      name="country"
+      ng-init="country = 'Canada'"
+      ng-options="country for country in countries"
+    >
+    </select>
   </div>
 
   <div class="form-row">
@@ -116,17 +145,20 @@
   </div>
 
   <div class="total">
-    <h2>${{data.howMany * 199}}</h2>
+    <h4 class="shipping">x{{data.howMany}} PetBot</h4>
+    <h4 class="shipping">+ $25 shipping</h4>
+    <h2 class="total-line">Your Total: ${{data.total}}</h2>
+    <p class="discount" ng-if="discount">10% discount applied</p>
     <button
       ng-click="submitOrderForm()"
-      ng-disabled="loading"
+      ng-disabled="status.submitting || orderForm.$invalid"
       class="form-button"
     >
       Submit Payment
     </button>
   </div>
 
-  <small>Trouble submitting, or need a bulk order? Email info@petbot.com</small>
+  <small class="disclaimer">Trouble submitting, or need a bulk order? Email <info-link></info-link></small>
   <h4 id='error-content'></h4>
 
 </form>

@@ -1,9 +1,9 @@
 class textComponentCtrl {
   /** @ngInject */
-  constructor($scope, $attrs) {
+  constructor($scope, $attrs, $sce) {
     this.title = $attrs.title;
     this.description = $attrs.description;
-    this.subdescription = $attrs.subdescription;
+    this.subdescription = $sce.trustAsHtml($attrs.subdescription);
   }
 }
 

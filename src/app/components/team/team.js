@@ -5,7 +5,7 @@ class teamController {
       {
         name: 'Zoran Grabovac',
         title: 'CEO',
-        content: 'I made PetBot because I love pets and other things.',
+        content: 'I love making people happy, whether that\'s with Pet Selfies or awful jokes. How about this? Knock knock - your doorbell is broken!',
         caricature: '/assets/team-zoran.svg'
       },
       {
@@ -17,13 +17,13 @@ class teamController {
       {
         name: 'Simon Sitwell',
         title: 'Developer',
-        content: 'PetBot, to me, is an endless horror of Android bugs and pain.',
+        content: 'Like me, pets can get kind of hungry. This way they\'re not like "Hey! I\'m getting kind of hungry. Need a little something between meals. Kind of peckish here."',
         caricature: '/assets/team-simon.svg'
       },
       {
         name: 'Erika Hoyle',
         title: 'Social Outreach',
-        content: 'Connecting people to their pets is my passion. Plus I love my cat!',
+        content: 'Connecting people to their pets is my passion. Plus I love checking in on my cats Belle and Coquette while I\'m away!',
         caricature: '/assets/team-erika.svg'
       },
       {

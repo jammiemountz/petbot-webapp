@@ -1,7 +1,10 @@
 class headerController {
   /** @ngInject */
-  constructor($scope, $attrs) {
+  constructor($scope, $attrs, $window) {
     this.hideCta = $attrs.hideCta;
+    this.scrollToTop = function () {
+      $window.scrollTo(0, 0);
+    };
   }
 }
 

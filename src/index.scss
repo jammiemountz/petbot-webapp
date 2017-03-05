@@ -70,11 +70,42 @@ button {
 .framed.small:after {
   width: 35px;
   margin: 0 10px;
+  @media (max-width: 800px) {
+    width: 25px;
+  }
 }
 
 .framed.white:before,
 .framed.white:after {
   background-color: white;
+}
+
+.page-container {
+  padding-top: 65px;
+}
+
+.link {
+  color: $brand;
+}
+
+.icon-grey-1 {
+  fill: $brand-cool-grey;
+}
+
+.icon-grey-2 {
+  fill: gray;
+}
+
+.icon-grey-3 {
+  fill: #cbcfd8;
+}
+
+.icon-grey-4 {
+  fill: #6b6262;
+}
+
+.icon-white {
+  fill: white;
 }
 
 @import "./flexbox";
@@ -93,6 +124,7 @@ button {
 @import "./app/components/button/button";
 @import "./app/components/selfie-testimonials/selfie-testimonials";
 @import "./app/components/team/team";
+@import "./app/components/infoLink/infoLink";
 @import "./app/components/specs/specs";
 
 @import "./app/directives/tryItOut/tryItOut";

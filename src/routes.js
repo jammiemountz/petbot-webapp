@@ -39,7 +39,7 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       component: 'orderFormPage'
     })
     .state('thanks', {
-      url: '/thanks',
+      url: '/thanks/:amount/:name',
       component: 'thanksPage'
     })
     .state('setup', {

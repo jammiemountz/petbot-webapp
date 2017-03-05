@@ -69,7 +69,7 @@ class setupPageCtrl {
         id: 10,
         question: 'Nothing here answered my question, nothing is working, what do I do?!?',
         type: 'account',
-        answer: 'Please take a deep breath, hug your pet, and contact support at <span class="highlight">info@petbot.com</span>. We will be more than happy to assist you in getting your PetBot operational, so that your pet and you can enjoy a healthy connection when you are away from your home.'
+        answer: 'Please take a deep breath, hug your pet, and contact support at info@petbot.com. We will be more than happy to assist you in getting your PetBot operational, so that your pet and you can enjoy a healthy connection when you are away from your home.'
       }
     ];
   }

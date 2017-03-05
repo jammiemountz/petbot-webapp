@@ -8,23 +8,44 @@
   width: 100%;
 }
 
+.field-required {
+  position: absolute;
+  font-size: 30px;
+  right: -20px;
+  line-height: 60px;
+  color: $brand;
+}
+
 .form-input {
   width: 100%;
   padding: 10px;
   border-width: 0 0 5px 0;
+  border-color: #eeeeee;
+  transition: border-color 0.3s ease;
   font-size: 16px;
+  &.ng-valid.ng-dirty {
+    border-color: $brand;
+  }
+  &.ng-invalid.ng-dirty {
+    border-color: red;
+  }
+}
+
+.disclaimer {
+  margin: 11px;
 }
 
 .form-input:focus {
   width: 100%;
   padding: 10px;
   border-width: 0 0 5px 0;
-  border-color: $brand;
+  border-color: #bfbfbf;
   outline: none;
 }
 
 .form-row {
   margin: 40px 0;
+  position: relative;
 }
 
 .form-row-howmany {
@@ -33,11 +54,16 @@
 }
 
 .form-input-select {
-  height: 20px;
-  width: 100px;
   height: 30px;
   font-size: 16px;
   width: 50px;
+}
+
+.form-input-select-country {
+  height: 30px;
+  font-size: 16px;
+  width: 200px;
+  margin: 30px 100px;
 }
 
 .form-label-select {
@@ -49,6 +75,15 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.discount {
+  position: absolute;
+  margin-top: 30px;
+  width: 100%;
+  font-size: small;
 }
 
 .form-button {
@@ -73,4 +108,12 @@
     cursor: auto;
     pointer-events: none;
   }
+}
+
+.total-line {
+  margin: 30px 0;
+}
+
+.shipping {
+  margin: 0;
 }

@@ -5,7 +5,7 @@ class featuresController {
       {
         title: 'Calm them.',
         image: '/assets/icon-bark-recognition.svg',
-        text: 'Customize greetings and record your voice'
+        text: 'Customize greetings and record your voice.'
       },
       {
         title: 'Treat them.',
@@ -15,7 +15,7 @@ class featuresController {
       {
         title: 'Love them.',
         image: '/assets/icon-spontaneous.svg',
-        text: 'Take pet selfies and videos'
+        text: 'Take pet selfies and videos.'
       }
       // {
       //   image: '/assets/icon-versitile-treats.svg',
