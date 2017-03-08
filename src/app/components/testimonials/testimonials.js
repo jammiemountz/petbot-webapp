@@ -4,11 +4,11 @@ class testimonialsController {
     this.index = 0;
     this.paused = false;
     this.pausedtimeout = null;
-    this.rotation = $interval(updateTestimonial.bind(this), 5000);
+    this.rotation = $interval(updateTestimonial.bind(this, null), 5000);
 
     function updateTestimonial(index) {
       this.paused = true;
-      this.pausedtimeout = $timeout(unpause.bind(this), 1000);
+      this.pausedtimeout = $timeout(unpause.bind(this), 500);
       if (index) {
         this.index = index;
       } else if (this.index === this.testimonials.length - 1) {
@@ -27,39 +27,40 @@ class testimonialsController {
       $timeout.cancel(this.pausedtimeout);
       updateTestimonial.call(this, index);
     };
-
     this.testimonials = [
       {
-        name: 'Tracey',
-        from: 'NY',
-        text: 'I love my petbot so much, I wanna take it behind the middle school and get it pregnant.'
+        name: 'Atos',
+        from: 'Toronto',
+        selfie: 'selfie-1.mov'
       },
       {
-        name: 'Stacey',
-        from: 'NJ',
-        text: 'PetBot is literally the best thing in my life. I love my cats and can now see them all the time.'
-      },
-      {
-        name: 'Jammie',
+        name: 'Daisy',
         from: 'CA',
-        text: 'One time I logged on and saw Miskos bare ass, which was concerning since I know hes given our password out to like a million people.'
+        selfie: 'selfie-2.mov'
       },
       {
-        name: 'Misko',
+        name: 'CEO-dog',
         from: 'Canada',
-        text: 'I dont even care if people see my ass, or my girlfriends ass, I need to give the password out to everyone I know including like my parents and my girlfriends sisters. Whee Im misko.'
+        selfie: 'selfie-3.mov'
       },
       {
-        name: 'Zoran',
-        from: 'Mars',
-        text: 'I like petbot so much I CEO\'d it'
+        name: 'Misho',
+        from: 'Sweden',
+        selfie: 'selfie-4.mp4'
       },
       {
-        name: 'Roger',
-        from: 'China',
-        text: 'I literally made petbot with my bare hands, it passed all the stress tests'
+        name: 'Derf',
+        from: 'Port Credit',
+        selfie: 'selfie-5.mp4'
       }
     ];
+    // this.testimonials = [
+    //   {
+    //     name: 'Tracey',
+    //     from: 'NY',
+    //     text: 'I love my petbot so much, I wanna take it behind the middle school and get it pregnant.'
+    //   }
+    // ]
   }
 }
 

@@ -1,7 +1,7 @@
 import angular from 'angular';
 import 'angular-ui-router';
 import 'angular-filter';
-import ngAnimate from 'angular-animate';
+// import ngAnimate from 'angular-animate';
 
 import routesConfig from './routes';
 
@@ -36,7 +36,7 @@ import {OrderFormPage} from './app/pages/OrderFormPage/OrderFormPage';
 import './index.scss';
 
 angular
-  .module('PetBot', ['ui.router', ngAnimate, 'angular.filter'])
+  .module('PetBot', ['ui.router', 'angular.filter'])
   .config(routesConfig)
   .directive('tryItOut', () => new TryItOut) // eslint-disable-line
   .directive('orderForm', () => new OrderForm) // eslint-disable-line

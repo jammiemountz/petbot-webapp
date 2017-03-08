@@ -3,6 +3,10 @@ class buttonController {
   constructor($scope, $attrs) {
     this.type = $attrs.type;
     this.content = $attrs.content;
+    $scope.trackOrder = () => {
+      console.log('track order');
+      return fbq('track', 'InitiateCheckout'); // eslint-disable-line
+    };
   }
 }
 

@@ -73,6 +73,7 @@ class OrderForm {
     };
     $scope.data = {
       howMany: 1,
+      shipping: null,
       total: null,
       firstName: '',
       lastName: '',
@@ -91,6 +92,7 @@ class OrderForm {
     };
     function successCallback() {
       $scope.status.submitting = false;
+      fbq('track', 'Purchase'); // eslint-disable-line
       $location.path(`/thanks/${$scope.data.howMany}/${$scope.data.firstName}`);
     }
     function errorCallback() {
@@ -100,11 +102,12 @@ class OrderForm {
       $scope.status.error = true;
     }
     $scope.calculateTotal = function () {
+      $scope.data.shipping = $scope.data.howMany * 25;
       if ($scope.data.howMany > 1) {
-        $scope.data.total = ((199 * $scope.data.howMany * 0.9) + 25).toFixed(2);
+        $scope.data.total = ((199 * $scope.data.howMany * 0.9) + $scope.data.shipping).toFixed(2);
         $scope.discount = true;
       } else { // eslint-disable-line
-        $scope.data.total = (199 + 25).toFixed(2);
+        $scope.data.total = (199 + $scope.data.shipping).toFixed(2);
         $scope.discount = false;
       }
     };

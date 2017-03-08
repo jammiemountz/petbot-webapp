@@ -21,7 +21,7 @@ function showRemaining() {
   const minute = second * 60;
   const hour = minute * 60;
   const day = hour * 24;
-  const end = new Date('04/20/2017');
+  const end = new Date('04/22/2017');
   const now = new Date();
   const distance = end - now;
   if (distance < 0) {

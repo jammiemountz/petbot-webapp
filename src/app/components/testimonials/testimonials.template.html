@@ -1,6 +1,6 @@
 <div class="testimonials-container">
 
-  <h1 class="title white">Be a part of a pet care revolution.</h1>
+  <h1 class="title">The proof is in the selfie.</h1>
 
   <div class="carosel-toggle-container">
     <div
@@ -19,9 +19,9 @@
       ng-if="($index === testimonialsController.index) && (!testimonialsController.paused)"
     >
       <div class="testimonial-content-container">
-        <p class="testimonial-quote">"</p>
-        <p class="testimonial">{{testimonial.text}}</p>
-        <p class="testimonial-quote">"</p>
+        <video class="selfie-video" preload="auto" loop="true" autoplay>
+            <source src="{{'assets/' + testimonial.selfie}}" type="video/mp4">
+        </video>
       </div>
       <p class="author framed">
         <span class="caps">{{testimonial.name}},</span>
