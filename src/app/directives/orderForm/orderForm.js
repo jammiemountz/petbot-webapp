@@ -65,7 +65,7 @@ class OrderForm {
     $scope.countries = countries;
     $scope.howMany = 1;
     this.total = $scope.howMany * 199;
-    $scope.stripe = $window.Stripe('pk_test_3PiQi8On0wcJEqtzK6tKHMp2'); // eslint-disable-line
+    $scope.stripe = $window.Stripe('pk_live_FDI4Yxyons8pf4aGHXW9l4Rn'); // eslint-disable-line
     $scope.status = {
       submitting: false,
       error: false,
