@@ -8,7 +8,7 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
     .state('PetBot', {
       url: '/',
-      component: 'preCampaignPage'
+      component: 'crowdfundingPage'
     })
     .state('crowdfunding', {
       url: '/crowdfunding',
