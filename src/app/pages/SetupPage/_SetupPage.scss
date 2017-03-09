@@ -38,6 +38,15 @@
   }
 }
 
+.iframe-videos {
+  width: 560px;
+  height: 315px;
+  @media (max-width: 800px) {
+    width: 260px;
+    height: 146px;
+  }
+}
+
 .searchbar {
   padding: 10px;
   border-radius: 10px;

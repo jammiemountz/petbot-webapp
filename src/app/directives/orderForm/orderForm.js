@@ -32,9 +32,11 @@ const countries = [
   'Hungary',
   'Sweden',
   'Ireland',
+  'India',
   'United Kingdom',
   'China',
   'Cyprus',
+  'Chile',
   'Indonesia',
   'Israel',
   'Japan',
@@ -50,7 +52,7 @@ const countries = [
   'Turkey',
   'United Arab Emirates',
   'Vietnam'
-];
+].sort();
 
 class OrderForm {
   constructor() {
