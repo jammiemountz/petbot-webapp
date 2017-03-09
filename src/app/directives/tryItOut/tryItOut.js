@@ -5,29 +5,46 @@ class TryItOut {
     this.scope = {};
   }
 
-  controller($scope, $state) {
+  controller($scope, $state, $timeout, $interval) {
     $scope.state = $state;
+    $scope.clicked = false;
+    $scope.disabled = false;
+    const videoplayer = document.getElementById("js-try-it-out");
+    let loop; // eslint-disable
     /* eslint-disable */
-    $scope.stuff = function () {
-      const videoplayer = document.getElementById("js-try-it-out");  //get your videoplayer
+    $scope.loopFirstTwoSec = function () {
       videoplayer.loop=false;
-      videoplayer.currentTime = 0; //not sure if player seeks to seconds or milliseconds
+      videoplayer.currentTime = 0;
       videoplayer.play();
 
       //call function to stop player after given intervall
-      const stopVideoAfter = 2000;  //* 1000, because Timer is in ms
-      setInterval(function(){
+      const stopVideoAfter = 1000;  //* 1000, because Timer is in ms
+      loop = $interval(function(){
         //  videoplayer.pause();
         videoplayer.currentTime = 0;
       }, stopVideoAfter);
     };
     /* eslint-enable */
+
+    $scope.treatThem = function () {
+      if (!$scope.disabled) {
+        $scope.disabled = true;
+        $scope.clicked = true;
+        $interval.cancel(loop);
+        videoplayer.currentTime = 1;
+        videoplayer.play();
+        $timeout(function () { // eslint-disable-line
+          $scope.clicked = false;
+          $scope.disabled = false;
+          $scope.loopFirstTwoSec();
+        }, 7000);
+      }
+    };
   }
 
   // link(scope, element, attrs) {
   link(scope) {
-    console.log('state', scope.state);
-    scope.stuff();
+    scope.loopFirstTwoSec();
   }
 }
 

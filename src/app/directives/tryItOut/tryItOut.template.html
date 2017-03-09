@@ -6,7 +6,11 @@
       preload="auto"
       loop="true"
       autoplay>
-        <source src="assets/selfie-1.mov" type="video/mp4">
+        <source src="assets/selfie-2.mov" type="video/mp4">
     </video>
+    <div ng-class="[clicked ? 'treatprompt clicked' : 'treatprompt']">
+      <p class="treatprompt_text">Press the button to treat Daisy!</p>
+    </div>
+    <div class="treatbutton" ng-click="treatThem()" />
   </div>
 </div>

@@ -1,13 +1,89 @@
+.try-it-out-container {
+  position: relative;
+  @media (max-width: 800px) {
+    transform: scale(0.6)
+  }
+  @media (max-width: 400px) {
+    left: -50px;
+    transform: scale(0.4)
+  }
+}
+
 .phone {
   width: 600px;
   height: 240px;
-  background-color: black;
+  background-image: url('./assets/iphone.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: 0px auto;
   padding-top: 40px;
+  position: relative;
 }
 
 .phone-video {
   margin: 0 auto;
-  height: 200px;
+  height: 227px;
+  position: relative;
   display: block;
+  top: -12px;
+}
+
+.treatprompt_text {
+  text-align: center;
+  font-size: 1em;
+}
+
+.treatprompt {
+  text-align: center;
+  padding: 0 20px;
+  width: 160px;
+  height: 80px;
+  border-radius: 8px;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 343px;
+  transition: opacity 0.8s ease;
+  -webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+  animation: bounce ease 1s infinite alternate;
+}
+
+.treatprompt:after {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  top: -10px;
+  width: 20px;
+  transform: rotate(45deg);
+  background-color: white;
+  position: relative;
+}
+
+.treatprompt.clicked {
+  opacity: 0;
+}
+
+.treatbutton {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-image: url('./assets/treat.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: $brand;
+  position: absolute;
+  left: 425px;
+  top: 123px;
+}
+
+@keyframes bounce {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 10px;
+  }
 }
