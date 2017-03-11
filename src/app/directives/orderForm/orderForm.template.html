@@ -9,10 +9,9 @@
     <select
       ng-model="data.howMany"
       class="form-input-select-howmany"
-      ng-change="calculateTotal()"
+      ng-change="getTotal()"
       type="text"
       name="howMany"
-      ng-init="data.howMany = '1'"
       ng-options="amount for amount in amounts"
     >
     </select>
@@ -23,7 +22,6 @@
     <label
       class="form-label"
       for="firstName"></label>
-    <span class="field-required" ng-if="this.$invalid === true">*</span>
     <input
       required
       ng-model="data.firstName"
@@ -35,7 +33,6 @@
     <label
       class="form-label"
       for="lastName"></label>
-    <span class="field-required" ng-if="data.lastName.$invalid">*</span>
     <input
       required
       ng-model="data.lastName"
@@ -47,7 +44,6 @@
     <label
       class="form-label"
       for="email"></label>
-    <span class="field-required" ng-if="data.email.$invalid">*</span>
     <input
       required
       ng-model="data.email"
@@ -59,7 +55,6 @@
     <label
       class="form-label"
       for="phone"></label>
-    <span class="field-required" ng-if="data.phone.$invalid">*</span>
     <input
       required
       ng-model="data.phone"
@@ -68,13 +63,23 @@
       type='text'
       pattern="[0-9- ()]+"
       name='phone'/>
+    <label
+      class="form-label"
+      for="referral"></label>
+    <input
+      ng-model="data.referral"
+      placeholder="Referral"
+      class="form-input"
+      type='text'
+      ng-blur="getTotal()"
+      pattern="[^<>;]+"
+      name='referral'/>
   </div>
 
   <div class="form-row">
     <label
       class="form-label"
       for="address"></label>
-    <span class="field-required" ng-if="data.address1.$invalid">*</span>
     <input
       required
       ng-model="data.address1"
@@ -92,7 +97,6 @@
     <label
       class="form-label"
       for="city"></label>
-    <span class="field-required" ng-if="data.city.$invalid">*</span>
     <input
       required
       ng-model="data.city"
@@ -104,7 +108,6 @@
     <label
       class="form-label"
       for="state"></label>
-    <span class="field-required" ng-if="data.state.$invalid">*</span>
     <input
       required
       ng-model="data.state"
@@ -116,7 +119,6 @@
     <label
       class="form-label"
       for="zip"></label>
-    <span class="field-required" ng-if="data.zip.$invalid">*</span>
     <input
       required
       ng-model="data.zip"
@@ -144,14 +146,18 @@
     <div id="card-errors"></div>
   </div>
 
-  <div class="total">
+  <div class="total" ng-if="status.gettingPrice">
+    <p>Calulating Price... </p>
+  </div>
+
+  <div class="total" ng-if="!status.gettingPrice">
     <h4 class="shipping">x{{data.howMany}} PetBot</h4>
     <h4 class="shipping">+ ${{data.shipping}} shipping</h4>
+    <h4 class="discount" ng-if="data.discount">-${{data.discount}} discount</h4>
     <h2 class="total-line">Your Total: ${{data.total}}</h2>
-    <p class="discount" ng-if="discount">10% discount applied</p>
     <button
       ng-click="submitOrderForm()"
-      ng-disabled="status.submitting || orderForm.$invalid"
+      ng-disabled="status.submitting || orderForm.$invalid || total === null || total === 'Error!'"
       class="form-button"
     >
       Submit Payment
