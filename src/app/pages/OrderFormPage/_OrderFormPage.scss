@@ -11,3 +11,16 @@
 .petbot-image-order {
   max-width: 200px;
 }
+
+.stripeImg {
+  height: 29px;
+  width: 35px;
+  background-image: url('assets/stripe.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+  position: relative;
+  top: 11px;
+  margin: 0 4px;
+}

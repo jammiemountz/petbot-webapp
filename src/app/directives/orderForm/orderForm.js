@@ -129,6 +129,7 @@ class OrderForm {
   }
 
   link(scope) {
+    window.scrollTo(0, 0);
     const elements = scope.stripe.elements();
     const card = elements.create('card');
     scope.getTotal();
