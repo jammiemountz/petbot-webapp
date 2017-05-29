@@ -2,7 +2,8 @@ class sellPetbotCtrl {
   /** @ngInject */
   constructor() {
     this.days = showRemaining().toString().split('');
-    this.numbers = [0, this.days[0], this.days[1]];
+    // this.numbers = [0, this.days[0], this.days[1]];
+    this.numbers = [0, 0, 0];
     this.image = true;
     this.switch = function (val) {
       this.image = val;
